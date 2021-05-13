@@ -68,7 +68,7 @@
         <dependency>
             <groupId>org.cometd.java</groupId>
             <artifactId>cometd-java-client</artifactId>
-            <version>3.1.4</version>
+            <version>3.1.14</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -151,10 +151,8 @@
                                 </goals>
                                 <configuration>
                                     <transformers>
-                                        <transformer
-                                            implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
-                                        <transformer
-                                            implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                        <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                        <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                             <mainClass>${module.main.class}</mainClass>
                                         </transformer>
                                     </transformers>
